@@ -207,8 +207,8 @@
         </div>
     </div>
     @endsection
-@section('script')
+<!-- @section('script')
     <script>
         alert('Hello');
     </script>
-    @endsection
+    @endsection -->
