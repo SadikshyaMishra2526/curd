@@ -20,18 +20,17 @@
         <ul class="nav navbar-nav">
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <!-- <img src="{{asset('back-end/img/user2-160x160.jpg" class="user-image" alt="User Image')}}"> -->
-              <img src="http://192.168.1.92:8000/back-end/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <img src="{{asset('back-end/img/frame.png')}}" class="user-image" alt="User Image">
+                <span class="hidden-xs">Sadikshya Mishra</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="{{asset('back-end/img/user2-160x160.jpg" class="img-circle" alt="User Image')}}">
+                <img src="{{asset('back-end/img/frame.png')}}" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
+                Sadikshya Mishra - Web Developer
+                  <small>Member since Nov. 2019</small>
                 </p>
               </li>
               <!-- Menu Footer-->

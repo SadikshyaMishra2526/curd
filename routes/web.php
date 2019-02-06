@@ -29,3 +29,5 @@ Route::get('/admin', function () {
    
 });
 
+Route::get('/admin/post/create','PostController@create')->name('post.create');
+
