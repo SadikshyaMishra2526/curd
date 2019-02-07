@@ -36,7 +36,25 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // validate the form
+        // dd($request->all());
+        $validatedData = $request->validate([
+            'title' => 'required|unique:posts|max:255',
+            'body' => 'required',
+        ]);
+    
+
+        // save the form data to database
+
+        $validatedData = $request->validate([
+            'title' => 'required|unique:posts|max:255',
+            'body' => 'required',
+        ]);
+    
+
+
+        //return view or response
+
     }
 
     /**
@@ -71,6 +89,7 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         //
+
     }
 
     /**
