@@ -50,10 +50,22 @@ class PostController extends Controller
             'title' => 'required|unique:posts|max:255',
             'description' => 'required',
         ]);
-        dd($request->all());
+        // dd($request->all());
     
+        $post =new Post;
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->user_id = "0";
+        $post->slug = str_slug($request->title);
+        $post->save();
 
+        if($post){
+            return redirect()->back();
+            // return redirect()->route('post.create');
 
+        }else{
+            return "failed";
+        }
         //return view or response
 
     }
